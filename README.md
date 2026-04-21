@@ -107,17 +107,18 @@ This study compares three approaches:
 ---
 
 ## 📁 Project Structure
+## 📁 Project Structure
+
 parkinsons-fastai/
 │
 ├── models/
-│ ├── final_model_comparison.csv
+│   └── final_model_comparison.csv
 │
 ├── notebooks/
-│ ├── fastai_tabular_parkinsons.ipynb
-│ ├── 02_model_comparison_parkinsons.ipynb
+│   ├── fastai_tabular_parkinsons.ipynb
+│   └── 02_model_comparison_parkinsons.ipynb
 │
 └── README.md
-
 
 ---
 
