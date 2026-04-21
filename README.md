@@ -144,21 +144,6 @@ This repository implements a **FastAI Tabular model** for structured biomedical 
 
 ## 📁 Project Structure
 
-
-```text
-parkinsons-fastai/
-│
-├── models/
-│   └── final_model_comparison.csv
-│
-├── notebooks/
-│   ├── fastai_tabular_parkinsons.ipynb
-│   └── 02_model_comparison_parkinsons.ipynb
-│
-└── README.md
-
-=======
-
 ```text
 parkinsons-fastai/
 ├── models/
