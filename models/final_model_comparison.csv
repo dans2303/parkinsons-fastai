@@ -1,0 +1,4 @@
+model,accuracy,precision,recall,f1_score,roc_auc,mcc,notes
+Gradient Boosting (ML),0.9565,0.9737,0.9737,0.9737,0.9868,0.8487,Loaded from saved model
+XGBoost (ML),0.9348,0.9268,1.0,0.962,0.9638,0.7611,Perfect recall; screening-oriented
+FastAI Tabular (DL),0.9565,0.9737,0.9737,0.9737,0.9901,0.8487,Weighted + threshold tuned (0.10)
