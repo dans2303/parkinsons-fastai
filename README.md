@@ -107,7 +107,6 @@ This study compares three approaches:
 ---
 
 ## 📁 Project Structure
-## 📁 Project Structure
 
 parkinsons-fastai/
 │
