@@ -119,7 +119,6 @@ parkinsons-fastai/
 │   └── 02_model_comparison_parkinsons.ipynb
 │
 └── README.md
-
 ---
 
 ## 🔗 Related Work
