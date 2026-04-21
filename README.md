@@ -4,15 +4,15 @@
 
 This project explores **deep learning for Parkinson’s disease detection** using voice-based biomedical features and compares it with classical machine learning approaches.
 
-It is a continuation of a machine learning pipeline developed using:
+It builds upon a prior machine learning pipeline developed using:
 
-- Gradient Boosting
-- XGBoost
+- Gradient Boosting  
+- XGBoost  
 
 👉 This repository focuses on:
 
-- FastAI Tabular (Deep Learning)
-- Comparative analysis between machine learning and deep learning models
+- FastAI Tabular (Deep Learning)  
+- Comparative analysis between machine learning and deep learning models  
 
 ---
 
@@ -30,7 +30,7 @@ This project leverages these features to enable **non-invasive and cost-effectiv
 
 This repository implements a **FastAI Tabular model** for structured biomedical data.
 
-Key components include:
+### Key Components
 
 - Multi-layer neural network architecture  
 - Feature normalization  
@@ -45,19 +45,19 @@ To ensure fair comparison across models:
 
 - Same dataset and feature set are used  
 - Stratified 80/20 train-test split  
-- Evaluation metrics:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-score
-  - ROC-AUC
-  - MCC (Matthews Correlation Coefficient)
+
+### Evaluation Metrics
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score  
+- ROC-AUC  
+- MCC (Matthews Correlation Coefficient)  
 
 ---
 
 ## 📊 Model Comparison
-
-This study compares three approaches:
 
 | Model | Type |
 |------|------|
@@ -69,29 +69,32 @@ This study compares three approaches:
 
 ## 📈 Results
 
-| Model | Accuracy | Precision | Recall | F1-score | ROC-AUC | MCC |
-|------|--------|--------|--------|--------|--------|--------|
-| Gradient Boosting | 0.9565 | 0.9737 | 0.9737 | 0.9737 | 0.9868 | 0.8487 |
-| XGBoost | 0.9348 | 0.9268 | **1.0000** | 0.9620 | 0.9638 | 0.7611 |
-| FastAI Tabular | **0.9565** | 0.9737 | 0.9737 | 0.9737 | **0.9901** | **0.8487** |
+### Performance Comparison
+
+| Model | Accuracy | Recall | ROC-AUC | MCC |
+|:------|:--------:|:------:|:------:|:----:|
+| Gradient Boosting | 0.9565 | 0.9737 | 0.9868 | 0.8487 |
+| XGBoost | 0.9348 | **1.0000** | 0.9638 | 0.7611 |
+| FastAI Tabular | **0.9565** | 0.9737 | **0.9901** | **0.8487** |
 
 ---
 
-## 🔍 Key Insights
+### Key Insights
 
-- **FastAI Tabular** achieved the best overall performance (highest ROC-AUC)  
-- **Gradient Boosting** produced the most balanced predictions  
-- **XGBoost** achieved perfect recall, meaning no Parkinson cases were missed  
+- **FastAI Tabular** → best overall performance (highest ROC-AUC)  
+- **Gradient Boosting** → most balanced predictions  
+- **XGBoost** → perfect recall (no missed cases)  
 
 ---
 
 ## 🧠 Interpretation
 
-- Deep learning improves **class separation** (higher ROC-AUC)  
-- Classical machine learning remains highly competitive on tabular data  
-- Boosting models are particularly effective for **recall-critical applications**  
+- Deep learning improves **class separation**  
+- Classical ML remains highly competitive for tabular data  
+- Boosting models are strong for **recall-critical applications**  
 
-👉 Model selection should be guided by application goals:
+👉 Model selection should depend on application goals:
+
 - Screening → maximize recall  
 - Diagnosis → balanced performance  
 - General prediction → overall performance  
@@ -100,7 +103,7 @@ This study compares three approaches:
 
 ## 🏥 Practical Implications
 
-- **Screening systems** → XGBoost (no missed patients)  
+- **Screening systems** → XGBoost  
 - **Balanced diagnostic tools** → Gradient Boosting  
 - **General predictive systems** → FastAI Tabular  
 
@@ -119,39 +122,4 @@ parkinsons-fastai/
 │   └── 02_model_comparison_parkinsons.ipynb
 │
 └── README.md
----
 
-## 🔗 Related Work
-
-👉 Machine Learning pipeline:  
-`parkinsons-xgboost`
-
-This includes:
-- full preprocessing pipeline  
-- feature engineering  
-- SMOTETomek balancing  
-- Gradient Boosting and XGBoost models  
-
----
-
-## 🚀 Future Work
-
-- Cross-validation for more robust evaluation  
-- CNN-based spectrogram models  
-- Real-time inference system  
-- Integration with FastAPI  
-
----
-
-## 📬 Contact
-
-- 📧 Email: mirnadanisat@gmail.com  
-- 🔗 LinkedIn: https://www.linkedin.com/in/mirnadanisatandjung/
-
----
-
-## ⭐ Final Note
-
-This project demonstrates that both **machine learning and deep learning** can effectively detect Parkinson’s disease from structured voice features.
-
-The key takeaway is that **model performance must be interpreted in context**, not judged by a single metric such as accuracy.
