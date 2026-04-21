@@ -14,6 +14,15 @@ It builds upon a prior machine learning pipeline developed using:
 - FastAI Tabular (Deep Learning)  
 - Comparative analysis between machine learning and deep learning models  
 
+* Gradient Boosting
+* XGBoost
+
+👉 This repository focuses on:
+
+* FastAI Tabular (Deep Learning)
+* Comparative analysis between machine learning and deep learning models
+
+
 ---
 
 ## 🧬 Problem Background
@@ -32,16 +41,18 @@ This repository implements a **FastAI Tabular model** for structured biomedical 
 
 ### Key Components
 
-- Multi-layer neural network architecture  
-- Feature normalization  
-- Class imbalance handling using weighted loss  
-- Threshold tuning for improved medical relevance  
+* Multi-layer neural network architecture
+* Feature normalization
+* Class imbalance handling using weighted loss
+* Threshold tuning for improved medical relevance
 
 ---
 
 ## ⚙️ Experimental Setup
 
-To ensure fair comparison across models:
+* Same dataset and feature set
+* Stratified 80/20 split
+
 
 - Same dataset and feature set are used  
 - Stratified 80/20 train-test split  
@@ -55,9 +66,18 @@ To ensure fair comparison across models:
 - ROC-AUC  
 - MCC (Matthews Correlation Coefficient)  
 
+### Metrics
+
+* Accuracy
+* Recall
+* ROC-AUC
+* MCC
+
+
 ---
 
-## 📊 Model Comparison
+## 📊 Results
+
 
 | Model | Type |
 |------|------|
@@ -99,17 +119,31 @@ To ensure fair comparison across models:
 - Diagnosis → balanced performance  
 - General prediction → overall performance  
 
+| Model             |  Accuracy  |   Recall   |   ROC-AUC  |     MCC    |
+| :---------------- | :--------: | :--------: | :--------: | :--------: |
+| Gradient Boosting |   0.9565   |   0.9737   |   0.9868   |   0.8487   |
+| XGBoost           |   0.9348   | **1.0000** |   0.9638   |   0.7611   |
+| FastAI Tabular    | **0.9565** |   0.9737   | **0.9901** | **0.8487** |
+
+
 ---
 
 ## 🏥 Practical Implications
+
 
 - **Screening systems** → XGBoost  
 - **Balanced diagnostic tools** → Gradient Boosting  
 - **General predictive systems** → FastAI Tabular  
 
+* **Screening systems** → XGBoost
+* **Balanced diagnosis** → Gradient Boosting
+* **General prediction** → FastAI
+
+
 ---
 
 ## 📁 Project Structure
+
 
 ```text
 parkinsons-fastai/
@@ -122,4 +156,29 @@ parkinsons-fastai/
 │   └── 02_model_comparison_parkinsons.ipynb
 │
 └── README.md
+
+=======
+
+```text
+parkinsons-fastai/
+├── models/
+│   └── final_model_comparison.csv
+├── notebooks/
+│   ├── fastai_tabular_parkinsons.ipynb
+│   └── 02_model_comparison_parkinsons.ipynb
+└── README.md
+```
+
+---
+
+## 🔗 Related Work
+
+Machine Learning pipeline: `parkinsons-xgboost`
+
+---
+
+## 📬 Contact
+
+* 📧 [mirnadanisat@gmail.com](mailto:mirnadanisat@gmail.com)
+* 🔗 https://www.linkedin.com/in/mirnadanisatandjung/
 
