@@ -114,7 +114,7 @@ parkinsons-fastai/
 ├── models/
 │   └── final_model_comparison.csv
 ├── notebooks/
-│   ├── 01_fastai_tabular_parkinsons.ipynb
+│   ├── fastai_tabular_parkinsons.ipynb
 │   └── 02_model_comparison_parkinsons.ipynb
 └── README.md
 ```
@@ -123,7 +123,7 @@ parkinsons-fastai/
 
 ## 🔗 Related Work
 
-Machine Learning pipeline: parkinsons-xgboost
+Machine Learning pipeline: `parkinsons-xgboost`
 
 This includes:
 
