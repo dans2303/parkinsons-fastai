@@ -1,6 +1,6 @@
-# 🧠 Parkinson’s Disease Detection using Deep Learning (FastAI) and Model Comparison
+# Parkinson’s Disease Detection using Deep Learning (FastAI) and Model Comparison
 
-## 📌 Overview
+## Overview
 
 This project explores **deep learning for Parkinson’s disease detection** using voice-based biomedical features and compares it with classical machine learning approaches.
 
@@ -16,7 +16,7 @@ This repository focuses on:
 
 ---
 
-## 🧬 Problem Background
+## Problem Background
 
 Parkinson’s disease is a progressive neurological disorder that affects motor control and speech.
 
@@ -26,7 +26,7 @@ This project leverages these features to enable **non-invasive and cost-effectiv
 
 ---
 
-## 🤖 Deep Learning Approach
+## Deep Learning Approach
 
 This repository implements a **FastAI Tabular model** for structured biomedical data.
 
@@ -39,7 +39,7 @@ This repository implements a **FastAI Tabular model** for structured biomedical 
 
 ---
 
-## ⚙️ Experimental Setup
+## Experimental Setup
 
 To ensure fair comparison across models:
 
@@ -57,7 +57,7 @@ To ensure fair comparison across models:
 
 ---
 
-## 📊 Model Comparison
+## Model Comparison
 
 | Model | Type |
 |------|------|
@@ -67,7 +67,7 @@ To ensure fair comparison across models:
 
 ---
 
-## 📈 Results
+## Results
 
 ### Performance Comparison
 
@@ -85,7 +85,7 @@ To ensure fair comparison across models:
 
 ---
 
-## 🧠 Interpretation
+## Interpretation
 
 - Deep learning improves **class separation**
 - Classical ML remains highly competitive for tabular data
@@ -99,7 +99,7 @@ Model selection should depend on application goals:
 
 ---
 
-## 🏥 Practical Implications
+## Practical Implications
 
 - **Screening systems** → XGBoost
 - **Balanced diagnostic tools** → Gradient Boosting
@@ -107,7 +107,7 @@ Model selection should depend on application goals:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 parkinsons-fastai/
@@ -121,7 +121,7 @@ parkinsons-fastai/
 
 ---
 
-## 🔗 Related Work
+## Related Work
 
 Machine Learning pipeline: `parkinsons-xgboost`
 
@@ -134,7 +134,7 @@ This includes:
 
 ---
 
-## 🚀 Future Work
+## Future Work
 - Cross-validation for more robust evaluation
 - CNN-based spectrogram models
 - Real-time inference system
@@ -142,8 +142,8 @@ This includes:
 
 ---
 
-## 📬 Contact
+## Contact
 
-📧 Email: mirnadanisat@gmail.com
+Email: mirnadanisat@gmail.com
 
-🔗 LinkedIn: https://www.linkedin.com/in/mirnadanisatandjung/
+LinkedIn: https://www.linkedin.com/in/mirnadanisatandjung/
